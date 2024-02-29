@@ -3,7 +3,7 @@ require('dotenv').config()
 
 
 const pool = new Pool({
-    connectionString: "",
+    connectionString: process.env.POSTGRE_SQL,
 })
 
 try {
